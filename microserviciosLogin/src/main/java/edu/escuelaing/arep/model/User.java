@@ -1,8 +1,9 @@
 package edu.escuelaing.arep.model;
 
 public class User {
-    String user;
-    String passwd;
+
+    private String userName;
+    private String passwd;
 
     /**
      * Constructor de la clase User
@@ -11,17 +12,17 @@ public class User {
      */
 
     public User(String user, String passwd) {
-        this.user = user;
+        this.userName = user;
         this.passwd = passwd;
     }
 
 
     public String getUser() {
-        return this.user;
+        return this.userName;
     }
 
     public void setUser(String user) {
-        this.user = user;
+        this.userName = user;
     }
 
     public String getPasswd() {

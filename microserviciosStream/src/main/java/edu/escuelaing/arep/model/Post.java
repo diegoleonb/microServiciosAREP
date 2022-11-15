@@ -15,8 +15,8 @@ public class Post {
      * @param contenido
      * @param author
      */
-    public Post(LocalDate fecha, String contenido, String author) {
-        this.fecha = fecha;
+    public Post(String contenido, String author) {
+        this.fecha = LocalDate.now();
         this.contenido = contenido;
         this.author = new AtomicReference<String>(author);
     }

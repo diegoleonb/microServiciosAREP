@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Feed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+          input[type=button], input[type=submit], input[type=reset] {
+            background-color: #2E9AFF ;
+            border: 4px solid black;
+            border-radius: 10px;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+		</style>
+    </head>
+<body style="background-color:#000000;">
+<font style="color:#FFFFFF;" face="Verdana, Open Sans">
+    <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" width="50" height="50">
+    <h1>Twitter</h1>
+    <form>
+        <label for="message"></label>
+        <input type="text" class="form-control" placeholder="What's happening?" id="message" minlength="1" maxlength="140" style="width : 400px; height: 30px;" >
+        <input type="button" id="tweet" value="Tweet" onclick = saveTweet()>
+        <div id="muro"></p>
+        </div>
+    </form>
+</font>
+</body>
+
+<script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</html>

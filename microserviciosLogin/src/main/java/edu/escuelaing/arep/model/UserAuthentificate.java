@@ -7,6 +7,10 @@ public class UserAuthentificate {
     
     List<User> users;
 
+
+    /**
+     * Constructor de la clase UserAuthentificate
+     */
     public UserAuthentificate() {
         users = new ArrayList<User>();
     }

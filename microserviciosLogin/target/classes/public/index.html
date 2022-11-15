@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+          input[type=button], input[type=submit], input[type=reset] {
+            background-color: #2E9AFF ;
+            border: 4px solid black;
+            border-radius: 10px;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+		</style>
+    </head>
+    <body style="background-color:#000000;">
+      <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" width="50" height="50">
+		<form>
+      <br><label style="color:#FFFFFF;" for="GET-Username">Nombre de Usuario: </label><br><br>
+			<input id="GET-Username" type="text" name="StringToSave"><br><br>
+      <label style="color:#FFFFFF;" for="GET-Password">Contraseña: </label><br><br>
+			<input id="GET-Password" type="password" name="StringToSave"><br><br>
+      <input type="button" value="Login" id="LoginButton" onclick="loginUser()">
+		</form>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+    
+</html>
